@@ -1,0 +1,31 @@
+server:
+  port: 8885
+  address: 0.0.0.0
+#  servlet:
+#    context-path: /payment-service
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/db?useUnicode=true&characterEncoding=utf8&serverTimezone=UTC
+    username: root
+    password:
+  application:
+    name: payment-service
+
+mybatis:
+  type-aliases-package: com.wms.hmilytcc.entity
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    prefer-ip-address: true
+ribbon:
+  eureka:
+    enabled: true
+  NFLoadBalancerRuleClassName:  com.netflix.loadbalancer.RandomRule
+  MaxAutoRetriesNextServer : 0
+  MaxAutoRetries: 0
+  ReadTimeout: 10000
