@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/activemq_demo/activemq_demo.iml" filepath="$PROJECT_DIR$/activemq_demo/activemq_demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/cache.iml" filepath="$PROJECT_DIR$/.idea/cache.iml" />
+      <module fileurl="file://$PROJECT_DIR$/redis_cache/redis_cache.iml" filepath="$PROJECT_DIR$/redis_cache/redis_cache.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.demo.cache.Mapper.UserMapper">
+    <select id="find" resultType="User">
+select * from student where id=#{id}
+    </select>
+
+    <select id="list" resultType="User">
+        select * from student
+    </select>
+    <!--<cache type="org.mybatis.caches.ehcache.LoggingEhcache"
+    eviction="LRU" flushInterval="3000" size="100" readOnly="true"
+    blocking="true"/>-->
+</mapper>
